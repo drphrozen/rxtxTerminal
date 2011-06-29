@@ -10,7 +10,6 @@ import gnu.io.Utils;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Vector;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
@@ -82,7 +81,7 @@ public class Settings extends JPanel {
 //    });
     add(mPortComboBox);
     
-    mSpeedComboBox = new JComboBox(new Vector<String>(Utils.DefaultSpeeds));
+    mSpeedComboBox = new JComboBox(Utils.DefaultSpeeds);
     mSpeedComboBox.setToolTipText("Speed");
     mSpeedComboBox.setEditable(true);
     

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="dk/znz/znk/terminal/Control.java|dk/znz/znk/terminal/CustomComboBox.java|dk/znz/znk/terminal/RxtxTerminal.java|dk/znz/znk/terminal/SerialConnection.java|dk/znz/znk/terminal/SerialSettings.java|dk/znz/znk/terminal/Settings.java|dk/znz/znk/terminal/SettingsDialog.java" kind="src" path="src"/>
 	<classpathentry kind="lib" path="lib/RXTXcomm.jar" sourcepath="lib/rxtx-2.2pre2-src.zip">
 		<attributes>
 			<attribute name="javadoc_location" value="http://users.frii.com/jarvi/rxtx/doc/"/>
@@ -13,5 +13,15 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/platform.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/eclipse/plugins/org.eclipse.core.databinding_1.4.0.I20110111-0800.jar" sourcepath="C:/eclipse/plugins/org.eclipse.core.databinding_1.4.0.I20110111-0800.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/plugins/org.eclipse.core.databinding.beans_1.2.100.I20100824-0800.jar" sourcepath="C:/eclipse/plugins/org.eclipse.core.databinding.beans_1.2.100.I20100824-0800.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/plugins/org.eclipse.core.databinding.observable_1.4.0.I20110222-0800.jar" sourcepath="C:/eclipse/plugins/org.eclipse.core.databinding.observable_1.4.0.I20110222-0800.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/plugins/org.eclipse.core.databinding.property_1.4.0.I20110222-0800.jar" sourcepath="C:/eclipse/plugins/org.eclipse.core.databinding.property_1.4.0.I20110222-0800.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/plugins/org.eclipse.jface.databinding_1.5.0.I20100907-0800.jar" sourcepath="C:/eclipse/plugins/org.eclipse.jface.databinding_1.5.0.I20100907-0800.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/plugins/org.eclipse.equinox.common_3.6.0.v20110523.jar" sourcepath="C:/eclipse/plugins/org.eclipse.equinox.common_3.6.0.v20110523.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/plugins/com.ibm.icu_4.4.2.v20110208.jar" sourcepath="C:/eclipse/plugins/com.ibm.icu_4.4.2.v20110208.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/plugins/org.eclipse.swt.win32.win32.x86_3.7.0.v3735b.jar" sourcepath="C:/eclipse/plugins/org.eclipse.swt.win32.win32.x86_3.7.0.v3735b.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar" sourcepath="C:/eclipse/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/plugins/org.eclipse.ui.forms_3.5.100.v20110425.jar" sourcepath="C:/eclipse/plugins/org.eclipse.ui.forms_3.5.100.v20110425.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

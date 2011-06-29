@@ -1,15 +1,29 @@
 package dk.znz.znk.terminal;
 
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+
 public class SerialSettings {
-  private int mSpeed;
-  private int mDataBits;
-  private int mStopBits;
-  private int mParity;
-  private int mFlowControl;
+  private String                mPort;
+  private String                mSpeed;
+  private String                mDataBits;
+  private String                mStopBits;
+  private String                mParity;
+  private String                mFlowControl;
+
+  private PropertyChangeSupport mPropertyChangeSupport = new PropertyChangeSupport(this);
+
+  public void addPropertyChangeListener(String propertyName, PropertyChangeListener listener) {
+    mPropertyChangeSupport.addPropertyChangeListener(propertyName, listener);
+  }
+
+  public void removePropertyChangeListener(PropertyChangeListener listener) {
+    mPropertyChangeSupport.removePropertyChangeListener(listener);
+  }
 
   public SerialSettings() {}
 
-  public SerialSettings(int speed, int dataBits, int stopBits, int parity, int flowControl) {
+  public SerialSettings(String speed, String dataBits, String stopBits, String parity, String flowControl) {
     mSpeed = speed;
     mDataBits = dataBits;
     mStopBits = stopBits;
@@ -25,43 +39,51 @@ public class SerialSettings {
     mFlowControl = settings.mFlowControl;
   }
 
-  public int getSpeed() {
+  public String getSpeed() {
     return mSpeed;
   }
 
-  public void setSpeed(int speed) {
+  public void setSpeed(String speed) {
     mSpeed = speed;
   }
 
-  public int getDataBits() {
+  public String getDataBits() {
     return mDataBits;
   }
 
-  public void setDataBits(int dataBits) {
+  public void setDataBits(String dataBits) {
     mDataBits = dataBits;
   }
 
-  public int getStopBits() {
+  public String getStopBits() {
     return mStopBits;
   }
 
-  public void setStopBits(int stopBits) {
+  public void setStopBits(String stopBits) {
     mStopBits = stopBits;
   }
 
-  public int getParity() {
+  public String getParity() {
     return mParity;
   }
 
-  public void setParity(int parity) {
+  public void setParity(String parity) {
     mParity = parity;
   }
 
-  public int getFlowControl() {
+  public String getFlowControl() {
     return mFlowControl;
   }
 
-  public void setFlowControl(int flowControl) {
+  public void setFlowControl(String flowControl) {
     mFlowControl = flowControl;
+  }
+
+  public String getPort() {
+    return mPort;
+  }
+
+  public void setPort(String port) {
+    mPort = port;
   }
 }

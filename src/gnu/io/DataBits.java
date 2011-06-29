@@ -1,10 +1,10 @@
 package gnu.io;
 
 public enum DataBits {
-  DATABITS_8(SerialPort.DATABITS_8),
-  DATABITS_7(SerialPort.DATABITS_7),
+  DATABITS_5(SerialPort.DATABITS_5),
   DATABITS_6(SerialPort.DATABITS_6),
-  DATABITS_5(SerialPort.DATABITS_5);
+  DATABITS_7(SerialPort.DATABITS_7),
+  DATABITS_8(SerialPort.DATABITS_8);
   
   private final int mValue;
   

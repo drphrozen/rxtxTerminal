@@ -1,8 +1,6 @@
 package gnu.io;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Enumeration;
 import java.util.List;
 
@@ -38,21 +36,9 @@ public class Utils {
     return serialPorts;
   }
 
-  public final static List<String> DefaultSpeeds = Collections.unmodifiableList(Arrays.asList(
-                                                     "110",
-                                                     "330",
-                                                     "600",
-                                                     "1200",
-                                                     "2400",
-                                                     "4800",
-                                                     "9600",
-                                                     "14400",
-                                                     "19200",
-                                                     "38400",
-                                                     "57600",
-                                                     "115200",
-                                                     "128000",
-                                                     "256000"));
+  public final static String[] DefaultSpeeds = new String[] {
+    "110", "330", "600", "1200", "2400", "4800", "9600", "14400", "19200", "38400", "57600", "115200", "128000", "256000"
+  };
 
   public enum PortType {
     PORT_SERIAL(1),
